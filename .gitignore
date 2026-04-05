@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Ignore any folder starting with build
+build/
+build_old/
+build-root-old/
+build_root_old/
+**/build/
+
+# Ignore HTML reports
+*.html

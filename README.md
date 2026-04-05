@@ -32,4 +32,12 @@ SneakerMarket is a modern Android application designed for sneaker enthusiasts t
 
 ## Screenshots
 
-*(Add screenshots here)*
+<p align="center">
+  <img src="Screenshots/splash.png" width="200" alt="Splash Screen" />
+  <img src="Screenshots/landing.png" width="200" alt="Home Screen" />
+  <img src="Screenshots/detail.png" width="200" alt="Product Detail" />
+</p>
+<p align="center">
+  <img src="Screenshots/filters.png" width="200" alt="Filters" />
+  <img src="Screenshots/checkout.png" width="200" alt="Checkout" />
+</p>

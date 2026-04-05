@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/colorSurface"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"> <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/teko_semibold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="-8dp"
+            android:text="स्नीकर मार्किट"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp" />
+        </LinearLayout>
+
+        <!-- Featured Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured Drops"
+            android:textSize="18sp"
+            android:textColor="@color/textColorPrimary"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/featuredRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clipToPadding="false"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Shop by Brand Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop by Brand"
+            android:textSize="18sp"
+            android:textColor="@color/textColorPrimary"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:paddingHorizontal="12dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNike"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="8dp">
+                <TextView android:text="Nike" style="@style/CategoryCardText"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAdidas"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="8dp">
+                <TextView android:text="Adidas" style="@style/CategoryCardText"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardJordan"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="8dp">
+                <TextView android:text="Jordan" style="@style/CategoryCardText"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNewBalance"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="8dp">
+                <TextView android:text="New Balance" style="@style/CategoryCardText"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+        <!-- Browse All Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/browseAllButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse All Sneakers"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/colorPrimary"
+            app:strokeColor="@color/colorPrimary"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

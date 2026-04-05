@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#007BFF</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorPrimary">#FF6F00</color>
+    <color name="colorPrimaryDark">#E66000</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">SneakerMarket</string>
+    <string name="buy_now_button">Buy Now</string>
+    <string name="checkout_address_hint">Enter your full address</string>
+    <string name="checkout_card_number_hint">Card Number</string>
+    <string name="checkout_confirm_purchase">Confirm Purchase</string>
+    <string name="checkout_cvv_hint">CVV</string>
+    <string name="checkout_expiry_hint">MM/YY</string>
+    <string name="checkout_order_summary">Order Summary</string>
+    <string name="checkout_payment_info">Payment Information</string>
+    <string name="checkout_product_name_placeholder">Product Name</string>
+    <string name="checkout_shipping_address">Shipping Address</string>
+    <string name="checkout_title">Checkout</string>
+    <string name="checkout_total_price_placeholder">Total: $0.00</string>
+    <string name="description_label">Description</string>
+    <string name="email_hint">Email</string>
+    <string name="favorite_icon_description">Toggle favorite</string>
+    <string name="filter_button_apply">Apply</string>
+    <string name="filter_button_clear">Clear</string>
+    <string name="filter_color">Color</string>
+    <string name="filter_color_black">Black</string>
+    <string name="filter_color_red">Red</string>
+    <string name="filter_color_white">White</string>
+    <string name="filter_price_max">Max</string>
+    <string name="filter_price_max_description">Maximum price input</string>
+    <string name="filter_price_min">Min</string>
+    <string name="filter_price_min_description">Minimum price input</string>
+    <string name="filter_price_range">Price Range</string>
+    <string name="filter_size">Size</string>
+    <string name="filter_size_8">8</string>
+    <string name="filter_size_8_5">8.5</string>
+    <string name="filter_size_9">9</string>
+    <string name="filter_title">Filters</string>
+    <string name="login_button">Login</string>
+    <string name="login_to_account">Log in to your account</string>
+    <string name="password_hint">Password</string>
+    <string name="product_brand_placeholder">Brand</string>
+    <string name="product_description_placeholder">Loading product description</string>
+    <string name="product_image_description">Image of the sneaker</string>
+    <string name="product_name_placeholder">Product Name</string>
+    <string name="product_price_placeholder">$0.00</string>
+    <string name="product_type_placeholder">Type</string>
+    <string name="signup_prompt">Don\'t have an account? Sign up</string>
+    <string name="size_label">Size</string>
+    <string name="welcome_back">Welcome Back</string>
+    <style name="CategoryCardText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorSurface</item>
+    </style>
+    <style name="Theme.App.Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+    </style>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/colorPrimary</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_sneaker_logo</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.App.Base</item>
+    </style>
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/colorSurface</item>
+    </style>
+    <style name="Widget.App.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:minHeight">48dp</item>
+        
+        
+    </style>
+    <style name="Widget.App.FilterChip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:checkable">true</item>
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="android:textColor">@color/chip_text_selector</item>
+    </style>
+</resources>
